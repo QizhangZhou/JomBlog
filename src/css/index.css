@@ -1,0 +1,36 @@
+body{
+    background: #fff7fa;
+    margin:0px;
+    padding:0px;
+}
+
+.indexPanel{
+    position: absolute;
+    width:600px;
+    height:350px;
+    top:200px;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+    z-index: 10;
+}
+
+.indexLogo{
+    width: 600px;
+    height: 214px;
+    background-image: url('/src/img/indexHeadrImg.png');
+    background-size:100% 100%;
+    z-index: 10;
+}
+
+.indexBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    left:0px;
+    right: 0px;
+    background-image: url('/src/img/homeImg.png');
+    background-size:100% 800px;
+    background-repeat:no-repeat;
+}

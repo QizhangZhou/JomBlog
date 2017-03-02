@@ -1,0 +1,11 @@
+.Avatar{
+    position: fixed;
+    margin-left: 3%;
+    left: 0px;
+    top: 60px;
+}
+.Avatar h3 {
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    margin:0px;
+}

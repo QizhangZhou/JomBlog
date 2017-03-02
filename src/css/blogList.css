@@ -1,0 +1,10 @@
+.blogList{
+    margin-top: 80px;
+}
+
+.BtnBack{
+    position: fixed;
+    margin: 0px 0px 0px 30px;
+    left: 0px;
+    bottom: 1px;
+}

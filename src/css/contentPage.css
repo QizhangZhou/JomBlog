@@ -1,0 +1,25 @@
+.letterPage{
+    width:80%;
+    min-height:700px;
+    margin:30px auto;
+}
+
+.letterPageBk{
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    display: inline-block;
+}
+
+.letterPageBtnBack{
+    position: fixed;
+    margin: 0px 0px 0px 30px;
+    left: 0px;
+    bottom: 1px;
+}
+
+.avatar{
+    position: absolute;
+    right: 0px;
+    margin: -30px 8% 0px 0px;
+}
