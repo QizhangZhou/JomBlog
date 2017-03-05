@@ -9,6 +9,7 @@ import getMuiTheme from "material-ui/styles/getMuiTheme";
 import styleBlog from "../css/blogList.css";
 import TopBar from "./components/topBar";
 import Avatar from './components/avatar';
+import Footer from "./components/footer";
 import CirclePaper from './components/circlePaper';
 import {Link} from "react-router";
 //import injectTapEventPlugin from 'react-tap-event-plugin';
@@ -42,7 +43,7 @@ class BlogPage extends React.Component {
             <MuiThemeProvider muiTheme={getMuiTheme()}>
                 <div>
                     <TopBar/>
-                    <Avatar/>
+                    <Avatar style={{left:"5%"}}/>
                     <div className={styleBlog.blogList}>
                         {this.state.data.map(function (item) {
                             return (
@@ -54,6 +55,7 @@ class BlogPage extends React.Component {
                     <Link to="/">
                         <CirclePaper img={("url('../src/img/backIcon.png')")} radius={60} className={styleBlog.BtnBack}/>
                     </Link>
+                    <Footer></Footer>
                 </div>
             </MuiThemeProvider>
         );

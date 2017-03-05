@@ -20,6 +20,7 @@
     "webpack-dev-server": "^2.3.0"
   },
   "devDependencies": {
+    "img-loader": "^1.3.1",
     "jquery": "^3.1.1",
     "markdown-react-js": "^0.3.0",
     "react": "^15.4.2",

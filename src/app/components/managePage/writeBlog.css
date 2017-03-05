@@ -3,3 +3,8 @@
     width:80%;
     margin: 0 auto;
 }
+
+.dateLabelArea{
+    position: relative;
+    text-align: center;
+}

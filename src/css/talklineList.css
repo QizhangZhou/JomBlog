@@ -1,6 +1,9 @@
-.blogList{
+.talklineArea{
+    position: relative;
+    width:80%;
+    top:60px;
+    margin: 0px auto;
     min-height: 700px;
-    margin-top: 80px;
 }
 
 .BtnBack{

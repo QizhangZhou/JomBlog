@@ -20,8 +20,8 @@ class CircleMenu extends React.Component {
         return (
             <div className={style.menu}>
                 <Link to="/blog">{iconMenu("url('src/img/indexBlogIcon.png')")}</Link>
-                <Link to="/blog/pageblog">{iconMenu("url('src/img/indexTalkIcon.png')")}</Link>
-                <Link to="/mag">{iconMenu("url('src/img/indexLabIcon.png')")}</Link>
+                <Link to="/talkline">{iconMenu("url('src/img/indexTalkIcon.png')")}</Link>
+                <Link to="/introduction">{iconMenu("url('src/img/indexLabIcon.png')")}</Link>
             </div>
         );
     }

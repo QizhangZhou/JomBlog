@@ -1,0 +1,28 @@
+.CapGraph{
+    position: absolute;
+    top: 450px;
+    left: 10%;
+}
+.ExGraph{
+    position: absolute;
+    top: 520px;
+    right: 10%;
+}
+.FGraph{
+    position: absolute;
+    top: 50px;
+    right: 10%;
+}
+.info{
+    position: absolute;
+    top: 260px;
+    left: 15%;
+}
+.main{
+    width:85%;
+    margin: 0 auto;
+}
+
+.avatar{
+    left:10%;
+}

@@ -12,7 +12,7 @@ class Avatar extends React.Component{
             radius = this.props.radius;
         }
         return(
-            <div className={styleAvatar.Avatar}>
+            <div className={styleAvatar.Avatar} style={this.props.style}>
                 <CirclePaper img={("url('src/img/avatar.jpg')")} radius={radius} />
                 <h3>Calvin Zhou</h3>
             </div>

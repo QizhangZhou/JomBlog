@@ -22,7 +22,7 @@ class WriteBlog extends React.Component {
         dateb.setFullYear(dateb.getFullYear());
         this.state = {
             title: '',
-            label: [],
+            label: ["123", "sdfsdaf", "sder"],
             abstract: '',
             body: '',
             creationTime: dateb,
@@ -79,14 +79,16 @@ class WriteBlog extends React.Component {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({blog:{
-                "title": this.state.title,
-                "creationTime": this.state.creationTime,
-                "abstract": this.state.abstract,
-                "label": this.state.label,
-                "author": this.state.author,
-                "body": this.state.body
-            }})
+            body: JSON.stringify({
+                blog: {
+                    "title": this.state.title,
+                    "creationTime": this.state.creationTime,
+                    "abstract": this.state.abstract,
+                    "label": this.state.label,
+                    "author": this.state.author,
+                    "body": this.state.body
+                }
+            })
         }).then(res => res.json())
             .then(json => console.log(json))
             .catch(error => console.log(error));
@@ -95,17 +97,16 @@ class WriteBlog extends React.Component {
     }
 
     render() {
-
         return (
             <div className={styleWB.editArea}>
-                <Form onSubmit={this.handleSubmit}>
-                    <TextField
-                        hintText="HeadLined"
-                        floatingLabelText="Blog HeadLined"
-                        style={style}
-                        value={this.state.title}
-                        onChange={this.handleChange.bind(this, 'title')}
-                    /><br />
+                <TextField
+                    hintText="HeadLined"
+                    floatingLabelText="Blog HeadLined"
+                    style={style}
+                    value={this.state.title}
+                    onChange={this.handleChange.bind(this, 'title')}
+                /><br />
+                <div className={styleWB.dateLabelArea}>
                     <DatePicker
                         floatingLabelText="Date"
                         defaultDate={this.state.creationTime}
@@ -130,29 +131,28 @@ class WriteBlog extends React.Component {
                                     );
                                 })) : {}
                         }
-
                     </div>
-                    <TextField
-                        hintText="Abstract"
-                        floatingLabelText="This is Abstract!"
-                        style={style}
-                        multiLine={true}
-                        rows={2}
-                        value={this.state.abstract}
-                        onChange={this.handleChange.bind(this, 'abstract')}
-                    />
-                    <TextField
-                        hintText="Blog Body Text"
-                        floatingLabelText="this is the blog body"
-                        style={style}
-                        multiLine={true}
-                        rows={2}
-                        value={this.state.body}
-                        onChange={this.handleChange.bind(this, 'body')}
-                    />
-                    <RaisedButton label="submit" primary={true} type="submit" onClick={this.handleSubmit.bind(this)}/>
+                </div>
+                <TextField
+                    hintText="Abstract"
+                    floatingLabelText="This is Abstract!"
+                    style={style}
+                    multiLine={true}
+                    rows={2}
+                    value={this.state.abstract}
+                    onChange={this.handleChange.bind(this, 'abstract')}
+                />
+                <TextField
+                    hintText="Blog Body Text"
+                    floatingLabelText="this is the blog body"
+                    style={style}
+                    multiLine={true}
+                    rows={2}
+                    value={this.state.body}
+                    onChange={this.handleChange.bind(this, 'body')}
+                />
+                <RaisedButton label="submit" primary={true} type="submit" onClick={this.handleSubmit.bind(this)}/>
 
-                </Form>
             </div>
         );
     }

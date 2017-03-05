@@ -44,7 +44,7 @@ class WrtieTalkline extends React.Component{
                     floatingLabelText="this is the blog body"
                     style={style}
                     multiLine={true}
-                    rows={1}
+                    rows={2}
                     value = {this.state.talkline}
                     onChange={this.handleChange.bind(this)}
                 />

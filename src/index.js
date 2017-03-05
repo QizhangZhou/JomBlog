@@ -11,6 +11,8 @@ import WriteBlog from './app/components/managePage/writeBlog';
 import WrtieTalkline from './app/components/managePage/writeTalkline';
 import BlogList from './app/components/managePage/blogList';
 import TalklineList from './app/components/managePage/talklineList';
+import TalklineListPage from './app/talklineListPage';
+import Introduction from './app/introduction';
 import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 
 
@@ -21,6 +23,8 @@ ReactDOM.render(
         <Route path='/blog/page/:id' component={ContentPage}/>
         <Route path='/blog/pageblog' component={ContentPage}/>
         <Route path='/lab' component={IndexImg}/>
+        <Route path='/talkline' component={TalklineListPage}/>
+        <Route path="/introduction" component={Introduction}/>
         <Route path='mag' component={ManagePage}>
             {/*<IndexRoute component={DrawerMenu}/>*/}
             <Route path='wBlog' component={WriteBlog}/>
