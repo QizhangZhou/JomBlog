@@ -25,7 +25,7 @@ ReactDOM.render(
         <Route path='/lab' component={IndexImg}/>
         <Route path='/talkline' component={TalklineListPage}/>
         <Route path="/introduction" component={Introduction}/>
-        <Route path='mag' component={ManagePage}>
+        <Route path='/mag' component={ManagePage}>
             {/*<IndexRoute component={DrawerMenu}/>*/}
             <Route path='wBlog' component={WriteBlog}/>
             <Route path='wTalkline' component={WrtieTalkline}/>

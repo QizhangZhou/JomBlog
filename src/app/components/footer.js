@@ -10,7 +10,7 @@ class  Footer extends React.Component{
         return(
             <div className={style.footer}>
                 <div>
-                    <div>Calvin Zhou</div>
+                    <Link to="/mag">  <div>Calvin Zhou</div></Link>
                     <div>Power by Jade of Moon Studio</div>
                     <div>by MaterialUI React React-route Webpack Nodejs Express Mongodb</div>
                     <div>Github:</div>

@@ -6,7 +6,7 @@ import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import styleBlogCard from './blogCard.css';
 import {Link} from 'react-router';
-import $ from 'jquery';
+import ChipBar from '../chipBar';
 
 class BlogCard extends React.Component{
     constructor(props){
@@ -35,14 +35,14 @@ class BlogCard extends React.Component{
             <Card className={styleBlogCard.blogCard}>
                 <CardHeader
                     title={this.state.data.title}
-                    subtitle={this.state.author + ' '+this.state.data.creationTime}
+                    subtitle={this.state.data.creationTime}
                     actAsExpander={true}
                     showExpandableButton={true}
                     titleStyle={{fontSize:20,fontWeight:"bold"}}
                 />
                 <CardActions>
                     <Link to={"/blog/page/"+item._id}><FlatButton label="Reade This Content" /></Link>
-                    <FlatButton label="Action2" />
+                    <ChipBar label = {this.state.data.label} style={{float:"right"}}/>
                 </CardActions>
                 <CardText expandable={true} style={{fontWeight:"bold"}}>
                     {this.state.data.abstract}

@@ -22,7 +22,7 @@ class WriteBlog extends React.Component {
         dateb.setFullYear(dateb.getFullYear());
         this.state = {
             title: '',
-            label: ["123", "sdfsdaf", "sder"],
+            label: [],
             abstract: '',
             body: '',
             creationTime: dateb,

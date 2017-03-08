@@ -18,7 +18,6 @@ body{
 .indexLogo{
     width: 600px;
     height: 214px;
-    background-image: url('/src/img/indexHeadrImg.png');
     background-size:100% 100%;
     z-index: 10;
 }
@@ -30,7 +29,7 @@ body{
     margin: auto;
     left:0px;
     right: 0px;
-    background-image: url('/src/img/homeImg.png');
+
     background-size:100% 800px;
     background-repeat:no-repeat;
 }

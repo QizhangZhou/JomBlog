@@ -87,7 +87,7 @@ class BlogList extends React.Component {
             return (
                 <div className={styleBl.blogListArea}>
                     {/*<LabelPoor/>*/}
-                    <label>You have not talkline!!</label>
+                    <label>You have not blog!!</label>
                 </div>
             );
         } else {

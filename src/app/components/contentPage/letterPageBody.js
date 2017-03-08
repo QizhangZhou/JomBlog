@@ -4,6 +4,7 @@
 import React from 'react';
 import Chip from 'material-ui/Chip';
 import style from "./letterPageBody.css";
+import ChipBar from '../chipBar';
 import { mdReact } from 'markdown-react-js';
 
 class LetterPageBody extends React.Component {
@@ -16,7 +17,6 @@ class LetterPageBody extends React.Component {
     render() {
         let blog = this.props.blog;
         let text;
-        console.log("blog label",blog.label);
         if(blog.body == null){
             text = '';
         }else{
@@ -27,8 +27,9 @@ class LetterPageBody extends React.Component {
                 <div className={style.letterTitle}>
                     <h1>{blog.title}</h1>
                 </div>
-                <div className={style.letterDate}>
-                    <h5>{blog.creationTime}</h5>
+                <div className = {style.letterTimeLabel}>
+                    <div className={style.letterDate}>{blog.creationTime}</div>
+                    <ChipBar label = {blog.label} style={{float:"left"}}/>
                 </div>
                 <div className={style.letterBody}>
                     {text}

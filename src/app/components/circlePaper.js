@@ -15,7 +15,7 @@ const style = {
 
 class CirclePaper extends React.Component {
     render() {
-        style.backgroundImage = this.props.img;
+        style.backgroundImage = "url('"+this.props.img+"')";
         style.height = this.props.radius;
         style.width = this.props.radius;
         return (

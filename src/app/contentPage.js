@@ -11,6 +11,7 @@ import LetterPageFooter from './components/contentPage/letterPageFooter';
 import TopBar from "./components/topBar";
 import CirclePaper from './components/circlePaper';
 import style from "../css/contentPage.css";
+import backImg from "../img/backIcon.png";
 
 const styleP = {
     height: "100%",
@@ -24,7 +25,13 @@ const styleP = {
 class ContentPage extends React.Component {
     constructor(props){
         super(props);
-        this.state={data:{}};
+        this.state={data:{id: '1123',
+            title: '123',
+            label: ['1','jdjd'],
+            abstract: 'sdfsdf',
+            creationTime: 'time',
+            body:"sdfsdfsdjdjdj能你fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你jdjdj能你fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第fsdfsdjdjdj能你觉得为什么第觉得为什么第",
+            author: 'yours'}};
     }
     componentWillMount() {
         let Cothis = this;
@@ -54,13 +61,15 @@ class ContentPage extends React.Component {
                     <div className={style.letterPage}>
                         <Paper style={styleP} zDepth={2} rounded={false}>
                             <div className={style.avatar}>
-                            <CirclePaper img={("url('../src/img/avatar.jpg')")} radius={70} />
+                                <div style={{marginRight:"50px"}}>
+                                    <img src="http://www.clazqz.com/avatar.jpg"></img>
+                                </div>
                             </div>
                             <LetterPageBody blog = {blog}></LetterPageBody>
                             <LetterPageFooter></LetterPageFooter>
                         </Paper>
                             <Link to="/blog">
-                                <CirclePaper img={("url('../src/img/backIcon.png')")} radius={60} className={style.letterPageBtnBack}/>
+                                <CirclePaper img={backImg} radius={60} className={style.letterPageBtnBack}/>
                             </Link>
                     </div>
                 </div>

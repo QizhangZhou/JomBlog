@@ -12,13 +12,25 @@ import Avatar from './components/avatar';
 import Footer from "./components/footer";
 import CirclePaper from './components/circlePaper';
 import {Link} from "react-router";
+import backImg from "../img/backIcon.png";
 //import injectTapEventPlugin from 'react-tap-event-plugin';
 
 
 class BlogPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {data: []};
+        this.state = {data: [{id: '1123',
+            title: '123',
+            label: ['1','jdjdjdjdjdjdjdj'],
+            abstract: 'sdfsdf',
+            creationTime: 'sdfsdf',
+            author: 'yours'},
+            {id: '344',
+            title: 'hello',
+            label: [234],
+            abstract: 'nihao',
+            creationTime: '',
+            author: 'yours'}]};
     }
 
     componentWillMount() {
@@ -43,7 +55,7 @@ class BlogPage extends React.Component {
             <MuiThemeProvider muiTheme={getMuiTheme()}>
                 <div>
                     <TopBar/>
-                    <Avatar style={{left:"5%"}}/>
+                    <Avatar style={{left:"4%"}}/>
                     <div className={styleBlog.blogList}>
                         {this.state.data.map(function (item) {
                             return (
@@ -53,7 +65,7 @@ class BlogPage extends React.Component {
                         }
                     </div>
                     <Link to="/">
-                        <CirclePaper img={("url('../src/img/backIcon.png')")} radius={60} className={styleBlog.BtnBack}/>
+                        <CirclePaper img={backImg} radius={60} className={styleBlog.BtnBack}/>
                     </Link>
                     <Footer></Footer>
                 </div>
