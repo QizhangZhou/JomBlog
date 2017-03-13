@@ -19,18 +19,7 @@ import backImg from "../img/backIcon.png";
 class BlogPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {data: [{id: '1123',
-            title: '123',
-            label: ['1','jdjdjdjdjdjdjdj'],
-            abstract: 'sdfsdf',
-            creationTime: 'sdfsdf',
-            author: 'yours'},
-            {id: '344',
-            title: 'hello',
-            label: [234],
-            abstract: 'nihao',
-            creationTime: '',
-            author: 'yours'}]};
+        this.state = {data: []};
     }
 
     componentWillMount() {

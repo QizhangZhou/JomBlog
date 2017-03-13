@@ -14,7 +14,6 @@ injectTapEventPlugin();
 
 class IndexPage extends React.Component {
     render() {
-        console.log(style.indexLogo);
         return (
                 <MuiThemeProvider muiTheme={getMuiTheme()}>
                     <div>
@@ -25,7 +24,7 @@ class IndexPage extends React.Component {
                             <CircleMenu/>
                         </div>
                         <div className={style.indexBackground}>
-                            <img src={bkImg} width="100%" height = "100%"/>
+                            <img src="http://omjbty4p8.bkt.clouddn.com/indexbk.png" width="100%" height = "100%"/>
                         </div>
                     </div>
                 </MuiThemeProvider>

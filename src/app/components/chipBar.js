@@ -6,7 +6,8 @@ import Chip from "material-ui/Chip";
 
 class ChipBar extends React.Component{
     render(){
-        let label = this.props.label
+        let label = this.props.label;
+        if(label != null){
         return(
             <div style={this.props.style}>
             {label.map(function(item){
@@ -20,7 +21,10 @@ class ChipBar extends React.Component{
                     </Chip>);
             })}
             </div>
-        );
+        );} else{return (
+            <div></div>
+        );}
+
     }
 }
 

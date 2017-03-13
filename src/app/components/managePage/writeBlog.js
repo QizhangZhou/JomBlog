@@ -35,14 +35,13 @@ class WriteBlog extends React.Component {
         if (this.props.params.id != null) {
             let id = this.props.params.id;
 
-            fetch('/blog/' + id, {
+            fetch('/b/' + id, {
                 method: 'GET',
                 mode: 'cors',// 避免cors攻击
                 credentials: 'include'
             }).then(function (response) {
                 //打印返回的json数据
                 response.json().then(function (data) {
-                    console.log(data);
                     Cothis.setState(data[0]);
                 });
             })

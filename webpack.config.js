@@ -37,10 +37,10 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(),
         // new webpack.NoErrorsPlugin(),
         //new webpack.optimize.CommonsChunkPlugin({name:'vendor', filename:'vendor.bundle.js'}),
-       /* new webpack.optimize.UglifyJsPlugin({
+        new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
             }
-        })*/
+        })
     ]
 }

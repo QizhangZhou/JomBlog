@@ -37,11 +37,9 @@ class LabelDialog extends React.Component{
         var newstate = {};
         newstate[name] = evnt.target.value;
         this.setState(newstate);
-        console.log(this.state.addLabel);
     }
 
     handleSubmit(){
-        console.log(this.state.addLabel);
         fetch('/addlabel',{
             method:'POST',
             headers:{

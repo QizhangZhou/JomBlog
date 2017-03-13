@@ -11,6 +11,7 @@ import TalklineItem from "./components/talklineItem";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import {Link} from 'react-router';
+import backImg from "../img/backIcon.png";
 
 
 const styles = {
@@ -46,7 +47,6 @@ class TalklineListPage extends React.Component {
 
     render() {
         let _this = this;
-        console.log("render talkline list page:");
         if (this.state.data == null) {
             return (
                 <MuiThemeProvider muiTheme={getMuiTheme()}>
@@ -54,7 +54,9 @@ class TalklineListPage extends React.Component {
                         <TopBar/>
                         <label>You have not talkline!!</label>
                     </div>
-
+                    <Link to="/">
+                        <CirclePaper img={backImg} radius={60} className={styletl.BtnBack}/>
+                    </Link>
                 </MuiThemeProvider>
             );
         } else {
@@ -72,6 +74,9 @@ class TalklineListPage extends React.Component {
                             })
                             }
                         </div>
+                        <Link to="/">
+                            <CirclePaper img={backImg} radius={60} className={styletl.BtnBack}/>
+                        </Link>
                         <Footer></Footer>
                     </div>
                 </MuiThemeProvider>

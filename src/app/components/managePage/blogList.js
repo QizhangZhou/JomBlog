@@ -44,7 +44,6 @@ class BlogList extends React.Component {
         }).then(function (response) {
             //打印返回的json数据
             response.json().then(function (data) {
-                console.log(data);
                 Cothis.setState({data: data});
             });
         })
